@@ -12,6 +12,10 @@ img {
     flex-shrink: 0;
 }
 
+a {
+    text-emphasis: none;
+}
+
 .contener {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
@@ -166,7 +170,56 @@ img {
     gap: 30px;
 }
 
+.product__link {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+.buttom__cart {
+    position: absolute;
+    display: none;
+    position: absolute;
+    display: none;
+    top: 33%;
+    left: 33%;
+
+}
+
+.buttom__cart:hover {
+    background: #F16D7F;
+}
+
+.product__h3:hover {
+    color: #F16D7F;
+}
+
+
+.button__text {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__link:hover {
+    .product__image {
+        -webkit-filter: brightness(0.5);
+        filter: brightness(0.5);
+    }
+
+    .buttom__cart {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        border: 2px solid #FFFFFF;
+        padding: 12px;
+    }
+}
+
 .item {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -426,39 +479,7 @@ img {
     display: none;
 }
 
-@media (max-width:1024px) {
-    .header__top.contener {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .contener {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .contener__slaider {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .content__feature.contener {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .content__subscribe.contener {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .footer.contener {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media(max-width:768px) {
+@media(max-width:1024px) {
 
     .header__top.contener {
         padding-left: calc(50% - 310px);
@@ -475,29 +496,9 @@ img {
         padding-right: calc(50% - 384px);
     }
 
-    .product__items {
-        grid-template: auto / repeat(2, 1fr);
-    }
-
     .content__feature.contener {
         padding-left: calc(50% - 180px);
         padding-right: calc(50% - 180px);
-    }
-
-    .content__feature {
-        padding-top: 48px;
-        padding-bottom: 64px;
-        flex-direction: column;
-        gap: 48px;
-    }
-
-    .content__subscribe {
-        background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../image/Layer-768px.png);
-        padding-top: 48px;
-        padding-bottom: 64px;
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
     }
 
     .content__subscribe.contener {
@@ -509,17 +510,37 @@ img {
         padding-left: calc(50% - 340px);
         padding-right: calc(50% - 340px);
     }
+
+    .product__items {
+        grid-template: auto / repeat(2, 1fr);
+    }
+
+    .content__subscribe {
+        background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../image/Layer-768px.png);
+        padding-top: 48px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .content__feature {
+        padding-top: 48px;
+        padding-bottom: 64px;
+        flex-direction: column;
+        gap: 48px;
+    }
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
     .header__top.contener {
         padding-left: 16px;
         padding-right: 16px;
     }
 
     .contener {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
     }
 
     .contener__slaider {
@@ -528,18 +549,18 @@ img {
     }
 
     .content__feature.contener {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
     }
 
     .content__subscribe.contener {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
     }
 
     .footer.contener {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: calc(50% - 340px);
+        padding-right: calc(50% - 340px);
     }
 
     .layer__img {
