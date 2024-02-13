@@ -13,23 +13,38 @@
 </head>
 
 <body>
-
     <header class="header__top contener">
         <div class="menu__left">
-            <img class="menu__gender" src="image/gender.png" alt="gender">
-            <img class="menu__search" src="image/search.png" alt="search">
+            <a href="index.html" class="menu__gender"></a>
+            <svg class="menu__search" xmlns="http://www.w3.org/2000/svg" width="26" height="27" fill="none"
+                viewBox="0 0 26 27">
+                <path fill="#E8E8E8"
+                    d="M18.059 17.625A10.395 10.395 0 1 0 10.419 21a10.315 10.315 0 0 0 6.24-2.09l7.749 7.807a.926.926 0 0 0 .66.285.9.9 0 0 0 .66-.285.971.971 0 0 0 0-1.346l-7.67-7.746ZM1.886 10.5a8.535 8.535 0 1 1 8.534 8.6 8.575 8.575 0 0 1-8.534-8.6Z" />
+            </svg>
         </div>
         <div class="menu__right">
+            <svg class="menu__menu" onclick="menuShow()" xmlns="http://www.w3.org/2000/svg" width="32" height="23"
+                fill="none" viewBox="0 0 32 23">
+                <path fill="#E8E8E8" d="M0 23v-2.69h32V23H0Zm0-10.24v-2.69h32v2.69H0ZM0 2.69V0h32v2.69H0Z" />
+            </svg>
 
-
-            <div class="menu__menu" onclick="menuShow()"></div>
-            <div class="menu__car"></div>
-            <div class="menu__user"></div>
+            <a class="menu__user__link" href="#"><svg class="menu__user" xmlns="http://www.w3.org/2000/svg" width="29"
+                    height="29" fill="none" viewBox="0 0 29 29">
+                    <path fill="#E8E8E8"
+                        d="M14.5 19.937c4.5 0 8.156-4.473 8.156-9.969C22.656 4.472 19 0 14.5 0a7.45 7.45 0 0 0-5.834 3 11.159 11.159 0 0 0-2.322 6.974c0 5.491 3.656 9.963 8.156 9.963Zm0-18.124c3.5 0 6.344 3.659 6.344 8.156 0 4.497-2.846 8.156-6.344 8.156s-6.344-3.66-6.345-8.156C8.154 5.473 11 1.813 14.5 1.813Zm6.344 16.312a.907.907 0 0 0 0 1.813 6.351 6.351 0 0 1 6.344 6.344.908.908 0 0 1-.906.906H2.72a.908.908 0 0 1-.906-.906 6.352 6.352 0 0 1 6.344-6.344.906.906 0 0 0 0-1.812A8.165 8.165 0 0 0 0 26.281 2.722 2.722 0 0 0 2.719 29h23.563A2.722 2.722 0 0 0 29 26.281a8.166 8.166 0 0 0-8.156-8.156Z" />
+                </svg>
+            </a>
+            <a class="menu__car__link" href="#"><svg class="menu__car" xmlns="http://www.w3.org/2000/svg" width="32"
+                    height="29" fill="none" viewBox="0 0 32 29">
+                    <path fill="#E8E8E8"
+                        d="M26.2 29a2.477 2.477 0 1 1 .201 0h-.2ZM6.754 26.32a2.68 2.68 0 1 1 5.364 0 2.68 2.68 0 0 1-5.366 0h.002Zm3.8-5.634a1.184 1.184 0 0 1-1.145-.867L4.575 2.364H1.182a1.182 1.182 0 0 1 0-2.364h4.281a1.183 1.183 0 0 1 1.144.868l4.833 17.455h13.178L29 8.275H14.4a1.183 1.183 0 1 1 0-2.365h16.413a1.178 1.178 0 0 1 .986.533 1.191 1.191 0 0 1 .1 1.122l-5.405 12.412a1.185 1.185 0 0 1-1.084.709H10.553Z" />
+                </svg>
+                <p class="count__car">5</p>
+            </a>
 
         </div>
         <nav class="nav__links">
             <h1 class="title__menu">Menu</h1>
-
             <h3 class="title__links">MAN</h3>
             <ul class="munu__link">
                 <li class="link__li"><a class="link" href="#">Accessories</a></li>
@@ -37,7 +52,6 @@
                 <li class="link__li"><a class="link" href="#">Denim</a></li>
                 <li class="link__li"><a class="link" href="#">T-Shirts</a></li>
             </ul>
-
             <h3 class="title__links">WOMAN</h3>
             <ul class="munu__link">
                 <li class="link__li"><a class="link" href="#">Accessories</a></li>
@@ -46,7 +60,6 @@
                 <li class="link__li"><a class="link" href="#">T-Shirts</a></li>
                 <li class="link__li"><a class="link" href="#">Shirts</a></li>
             </ul>
-
             <h3 class="title__links">KIDS</h3>
             <ul class="munu__link">
                 <li class="link__li"><a class="link" href="#">Accessories</a></li>
@@ -56,7 +69,6 @@
                 <li class="link__li"><a class="link" href="#">Shirts</a></li>
                 <li class="link__li"><a class="link" href="#">Bags</a></li>
             </ul>
-
         </nav>
     </header>
 
@@ -76,8 +88,9 @@
         <div class="item__banner">
             <a class="banner_link scale-up-center" href="#">
                 <div class="title">
-                    <p class="sale">30% OFF</p>
-                    <p class="gender">FOR WOMEN</p>
+                    <h3 class="sale">30% OFF<br>
+                        <span class="gender">FOR WOMEN</span>
+                    </h3>
                 </div>
                 <img src="image/women.jpg" alt="women">
             </a>
@@ -86,8 +99,9 @@
         <div class="item__banner">
             <a class="banner_link scale-up-center" href="#">
                 <div class="title">
-                    <p class="sale">HOT DEAL</p>
-                    <p class="gender">FOR MEN</p>
+                    <h3 class="sale">HOT DEAL<br>
+                        <span class="gender">FOR MEN</span>
+                    </h3>
                 </div>
                 <img src="image/men.jpg" alt="men">
             </a>
@@ -95,8 +109,9 @@
         <div class="item__banner">
             <a class="banner_link scale-up-center" href="#">
                 <div class="title">
-                    <p class="sale">NEW ARRIVALS</p>
-                    <p class="gender">FOR KIDS</p>
+                    <h3 class="sale">NEW ARRIVALS<br>
+                        <span class="gender">FOR KIDS</span>
+                    </h3>
                 </div>
                 <img src="image/kids.jpg" alt="kids">
             </a>
@@ -104,11 +119,12 @@
         <div class="item__banner big__item">
             <a class="banner_link scale-up-center" href="#">
                 <div class="title">
-                    <p class="sale">LUXIROUS & TRENDY</p>
-                    <p class="gender">ACCESORIES</p>
+                    <h3 class="sale">LUXIROUS & TRENDY<br>
+                        <span class="gender">ACCESORIES</span>
+                    </h3>
                 </div>
-                <img src="image/Layer 45.png" alt="Rectangle" class="mobile__banner">
-                <img src="image/Rectangle 20.jpg" alt="Rectangle" class="desktop__banner">
+                <img src="image/Layer-45.png" alt="Rectangle" class="mobile__banner">
+                <img src="image/Rectangle-20.jpg" alt="Rectangle" class="desktop__banner">
             </a>
         </div>
     </section>
@@ -139,26 +155,26 @@
                     </div>
                 </a>
             </article>
-            <a href="#" class="product__link">
-                <div class="item">
-                    <div class="product__image girl">
-                        <!--костыль-->
-                        <img src="image/product-item-2.png" alt="product item" class="pink__girl">
-                        <!--end-->
+            <article>
+                <a href="#" class="product__link">
+                    <div class="item">
+                        <div class="product__image">
+                            <img src="image/product-item-2.jpg" alt="product item">
+                        </div>
+                        <div class="product__text">
+                            <h3 class="product__h3">ELLERY X M'O CAPSULE</h3>
+                            <p class="product__p">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of
+                                cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <div class="buttom__cart">
+                            <img src="image/buttom-cart.png" alt="cart" class="cart__img">
+                            <p class="button__text">Add to Cart</p>
+                        </div>
                     </div>
-                    <div class="product__text">
-                        <h3 class="product__h3">ELLERY X M'O CAPSULE</h3>
-                        <p class="product__p">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <div class="buttom__cart">
-                        <img src="image/buttom-cart.png" alt="cart" class="cart__img">
-                        <p class="button__text">Add to Cart</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </article>
             <article>
                 <a href="#" class="product__link">
                     <div class="item">
@@ -246,27 +262,27 @@
     </section>
 
     <section class="content__feature contener">
-        <article class="feature__item">
+        <div class="feature__item">
             <img src="image/feature-item-1.png" alt="feature item 1" class="feature__image heartbeat">
             <h3 class="feature__h3">Free Delivery</h3>
             <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                 with
                 extensive models.</p>
-        </article>
-        <article class="feature__item">
+        </div>
+        <div class="feature__item">
             <img src="image/feature-item-2.png" alt="feature item 2" class="feature__image heartbeat">
             <h3 class="feature__h3">Sales & discounts</h3>
             <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                 with
                 extensive models.</p>
-        </article>
-        <article class="feature__item">
+        </div>
+        <div class="feature__item">
             <img src="image/feature-item-3.png" alt="feature item 3" class="feature__image heartbeat">
             <h3 class="feature__h3">Quality assurance</h3>
             <p class="feature__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                 with
                 extensive models.</p>
-        </article>
+        </div>
 
     </section>
 
@@ -279,12 +295,12 @@
         <div class="subscribe__rigth">
             <div class="rigth__section">
                 <div class="rigth__text">
-                    <p class="rigth__text__top">SUBSCRIBE</p>
+                    <h3 class="rigth__text__top">SUBSCRIBE</h3>
                     <p class="rigth__text__bottom">FOR OUR NEWLETTER AND PROMOTION</p>
                 </div>
                 <div class="subscribe__form">
                     <form action="#">
-                        <input type="email" name="" id="" placeholder="Enter Your Email">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
                         <button>Subscribe</button>
                     </form>
                 </div>
@@ -306,8 +322,7 @@
                 <img src="image/twitter-brands.png" alt="twitter" class="social__icon"></a>
         </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
-
-<script src="js/menu.js"></script>
 
 </html>
